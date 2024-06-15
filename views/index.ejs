@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CodeSleep</title>
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <a href="./"><h1 style="color: rgb(180, 145, 119);">Code-Sleep</h1></a>
+    
+    <form id="search-form" action="/search" method="get">
+      <input type="text" name = "q" placeholder="Search algorithms...">
+      <button type="submit">Search</button>
+      
+    </form>
+  </header>
+
+  <main>
+    <!-- <h2><br><br>Enter the valid Input.</h2> -->
+    <h3 style="color: rgb(180, 145, 119);"> <br>The existing dataset comprises of problems sourced from LeetCode Database.<br>  </h3>
+    <div class="search-results" id="search-results">
+    
+      <!-- ... -->
+
+    <!-- Display search results here -->
+    <% if (results && results.length > 0) { %>
+      <% results.forEach(function(result) { %>
+        <a class="result" href="<%= result.link %>">
+          <h3><%= result.title %></h3>
+          <!-- <p><%= result.description %></p> -->
+        </a>
+      <% }); %>
+    <% } else { %>
+      <h4 style="color: rgb(218, 28, 28);"><br>No results! :( </h4>
+    <% } %>
+    
+
+<!-- ... -->
+
+    </div>
+  </main>
+
+
+  <!-- <script src="js/script.js"></script> -->
+</body>
+</html>

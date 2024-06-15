@@ -1,7 +1,9 @@
-eat-**CODE_SLEEP**-repeat
+# Search-Engine - Code-Sleep
 
-Search-Engine - Code-Sleep
-// Description The project presents a search engine for Data Structures and Algorithms (DSA) questions. It involves an scraping process, where 2905 problems were extracted from LeetCode using Selenium WebDriver and BeautifulSoup in Python.
+
+## Description:
+The project presents a search engine for Data Structures and Algorithms (DSA) questions. 
+It involves an scraping process, where 2905 problems were extracted from LeetCode using Selenium WebDriver and BeautifulSoup in Python. 
 
 The core of the project revolves around the implementation of the Term Frequency-Inverse Document Frequency (TF-IDF) algorithm, enabling efficient search functionality for the DSA problems. By utilizing TF-IDF, the search engine determines the relevance of a query to each document in the database.
 
